@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Pacifico" rel="stylesheet">
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
 	<script src='js/app.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 </head>
 <body>
 	<div class="container" ng-app='myShoppingList'>
@@ -25,8 +26,8 @@
 				</ul>
 			</div>
 			<div class="footer-list">
-				<input type="text" placeholder="Nuevo producto" ng-model="newItem">
-				<button ng-click="addItem()">
+				<input type="text" placeholder="Nuevo producto" ng-model="newItem"><!--
+				--><button ng-click="addItem()">
 					Ingresar
 				</button>
 			</div>
