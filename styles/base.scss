@@ -26,6 +26,8 @@ li {
 .container-list {
 	background-color: rgba($black, .2);
 	padding: 30px;
+	max-width: 250px;
+	min-height: 350px;
 }
 .header-list {
 	display: flex;
@@ -46,6 +48,7 @@ i.delete {
 .footer-list {
 	display: flex;
 	margin-bottom: 20px;
+	width: 100%;
 }
 input {
 	padding: 10px;
@@ -56,4 +59,10 @@ button {
 	background-color: $green;
 	color: $white;
 	cursor: pointer;
+}
+p {
+	margin: 5px;
+}
+.message {
+	margin-bottom: 20px;
 }
