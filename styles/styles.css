@@ -74,9 +74,19 @@ p {
 
   .container-list {
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100vh; }
 
-  color: red; }
+  .footer-list {
+    display: flex;
+    flex-direction: column; }
+
+  input {
+    margin-bottom: 10px;
+    margin-top: 10px; }
+
+  button {
+    padding: 10px;
+    border-radius: 5px; } }
 @media screen and (max-width: 768px) {
   .container-list {
     max-width: 100%; } }
