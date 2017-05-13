@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="images/heart.png" type="image/x-icon"/>
+	<link rel="shortcut icon" href="images/heart.png" type="image/x-icon"/>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Pacifico" rel="stylesheet">
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
 	<script src='js/app.js'></script>
 </head>
@@ -17,7 +20,7 @@
 			<div class="body-list">
 				<ul>
 					<li ng-repeat='x in products'>
-						{{ x }} <i class="fa fa-remove" ng-click="removeItem(x)"></i>
+						{{ x }} <i class="fa fa-remove delete" ng-click="removeItem(x)"></i>
 					</li>
 				</ul>
 			</div>
