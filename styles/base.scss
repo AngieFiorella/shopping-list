@@ -36,6 +36,7 @@ li {
 .body-list {
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 ul {
 	padding-left: 0;
@@ -65,4 +66,5 @@ p {
 }
 .message {
 	margin-bottom: 20px;
+	font-size: .8em;
 }
