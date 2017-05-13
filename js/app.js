@@ -10,6 +10,7 @@ function getProducts($scope){
 		if($scope.products.indexOf($scope.newItem) == -1){
 				$scope.products.push($scope.newItem);
 				$scope.errorText = "El producto ha sido registrado correctamente."
+				$scope.newItem = "";
 		}
 		else {
 				$scope.errorText = "El producto ya se encuentra registrado."
