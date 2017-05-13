@@ -4,7 +4,9 @@ function getProducts($scope){
 	$scope.products = ['Chocolate', 'Roses', 'Flowers'];
 	$scope.errorText = "";
 	$scope.addItem = function(){
-		//$scope.products.push($scope.newItem);
+		if(!$scope.newItem){
+			return;
+		}
 		if($scope.products.indexOf($scope.newItem) == -1){
 				$scope.products.push($scope.newItem);
 				$scope.errorText = "El producto ha sido registrado correctamente."
@@ -14,6 +16,7 @@ function getProducts($scope){
 		}
 	}
 	$scope.removeItem = function(x){
+		$scope.errorText ="";
 		var indexItem = $scope.products.indexOf(x);
 		$scope.products.splice(indexItem, 1);
 	}
