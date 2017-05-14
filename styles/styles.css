@@ -94,7 +94,31 @@ p {
     padding: 10px;
     border-radius: 5px; } }
 @media screen and (max-width: 770px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    align-items: center; }
+
   .container-list {
-    max-width: 100%; } }
+    max-width: 100%;
+    padding: 190px; }
+
+  .container-items {
+    width: 40vw; }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column; }
+
+  input {
+    margin-bottom: 10px;
+    margin-top: 10px; }
+
+  button {
+    padding: 10px;
+    border-radius: 5px; }
+
+  h2 {
+    font-size: 3em; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -15,24 +15,26 @@
 <body>
 	<div class="container" ng-app='myShoppingList'>
 		<div class="container-list" ng-controller='myController'>
-			<div class="header-list">
-				<h2>Shopping List</h2>
-			</div>
-			<div class="body-list">
-				<ul>
-					<li ng-repeat='x in products'>
-						{{ x }} <i class="fa fa-remove delete" ng-click="removeItem(x)"></i>
-					</li>
-				</ul>
-			</div>
-			<div class="footer-list">
-				<input type="text" placeholder="Nuevo producto" ng-model="newItem"><!--
-				--><button ng-click="addItem()">
-					Ingresar
-				</button>
-			</div>
-			<div class="message">
-				<p>{{ errorText }}</p>
+			<div class="container-items">
+				<div class="header-list">
+					<h2>Shopping List</h2>
+				</div>
+				<div class="body-list">
+					<ul>
+						<li ng-repeat='x in products'>
+							{{ x }} <i class="fa fa-remove delete" ng-click="removeItem(x)"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-list">
+					<input type="text" placeholder="Nuevo producto" ng-model="newItem"><!--
+					--><button ng-click="addItem()">
+						Ingresar
+					</button>
+				</div>
+				<div class="message">
+					<p>{{ errorText }}</p>
+				</div>
 			</div>
 		</div>
 	</div>
