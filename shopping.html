@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../src/styles/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" href="images/heart.png" type="image/x-icon"/>
-	<link rel="shortcut icon" href="images/heart.png" type="image/x-icon"/>
+	<link rel="icon" href="../src/images/heart.png" type="image/x-icon"/>
+	<link rel="shortcut icon" href="../src/images/heart.png" type="image/x-icon"/>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Pacifico" rel="stylesheet">
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
 	<script src='js/app.js'></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 </head>
 <body>
-	<div class="container" ng-app='myShoppingList'>
+	<div class="container-shopping" ng-app='myShoppingList'>
 		<div class="container-list" ng-controller='myController'>
 			<div class="container-items">
 				<div class="header-list">
@@ -27,8 +27,8 @@
 					</ul>
 				</div>
 				<div class="footer-list">
-					<input type="text" placeholder="Nuevo producto" ng-model="newItem"><!--
-					--><button ng-click="addItem()">
+					<input type="text" placeholder="Nuevo producto" ng-model="newItem" class="shop"><!--
+					--><button ng-click="addItem()" class="add">
 						Ingresar
 					</button>
 				</div>
